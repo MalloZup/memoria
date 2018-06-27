@@ -12,7 +12,9 @@ defmodule Memoria do
       :world
 
   """
-  def hello do
-    :world
+  def freem do
+    System.cmd("free", [])
   end
 end
+
+IO.inspect Memoria.freem
